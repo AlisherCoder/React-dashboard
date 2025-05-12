@@ -8,6 +8,7 @@ const Loading = () => {
             <div className="w-10/12 h-9 bg-gray-300 mb-4"></div>
             <div className="w-8/12 h-9 bg-gray-300 mb-4"></div>
             <div className="w-1/2 h-9 bg-gray-300 mb-4"></div>
+            <div className="w-10/12 h-9 bg-gray-300 mb-4"></div>
          </div>
       </>
    );

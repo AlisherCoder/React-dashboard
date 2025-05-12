@@ -6,7 +6,7 @@ const App = () => {
    return (
       <>
          <MainRouters />
-         <Toaster position="top-right" reverseOrder={false} />
+         <Toaster position="top-center" reverseOrder={false} />
       </>
    );
 };

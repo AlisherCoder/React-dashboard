@@ -7,7 +7,6 @@ const Detail = () => {
    const { id } = useParams();
    const [data, setData] = useState();
    const [loading, setLoading] = useState(true);
-   const [imageId, setImageId] = useState(0);
 
    useLayoutEffect(() => {
       scrollTo(0, 0);
@@ -34,7 +33,7 @@ const Detail = () => {
             <>
                <div>
                   <div>
-                     <img className="w-[400px] h-[400px] object-contain" src={data?.images[imageId]} alt="" />
+                     <img className="w-[400px] h-[400px] object-contain" src={data?.image} alt="" />
                   </div>
                   <div className="flex gap-2">
                      {data?.images?.map((image, i) => (
@@ -43,9 +42,10 @@ const Detail = () => {
                   </div>
                </div>
                <div>
-                  <h1 className="text-4xl font-bold">{data?.title}</h1>
+                  <h1 className="text-4xl font-bold">{data?.name}</h1>
                   <h3 className="text-2xl font-bold my-4">$ {data?.price} USD</h3>
-                  <p>{data?.description}</p>
+                  <h3 className="text-2xl my-4">{data?.color}</h3>
+                  <p className="text-gray-500">{data?.description}</p>
                </div>
             </>
          )}
