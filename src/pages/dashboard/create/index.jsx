@@ -44,27 +44,27 @@ const Create = () => {
             <form className="max-w-md mx-auto space-y-5 px-3 mt-4 w-[500px]" onSubmit={handleSubmit}>
                <div>
                   <label className="mb-2 text-sm text-slate-900 font-medium block">Name</label>
-                  <input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Enter name" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
+                  <input required value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Enter name" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
                </div>
 
                <div>
                   <label className="mb-2 text-sm text-slate-900 font-medium block">Price</label>
-                  <input value={price} onChange={(e) => setPrice(e.target.value)} type="number" placeholder="Enter number" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
+                  <input required value={price} onChange={(e) => setPrice(e.target.value)} type="number" placeholder="Enter number" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
                </div>
 
                <div>
                   <label className="mb-2 text-sm text-slate-900 font-medium block">Color</label>
-                  <input value={color} onChange={(e) => setColor(e.target.value)} type="text" placeholder="Enter color" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
+                  <input required value={color} onChange={(e) => setColor(e.target.value)} type="text" placeholder="Enter color" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
                </div>
 
                <div>
                   <label className="mb-2 text-sm text-slate-900 font-medium block">Img url</label>
-                  <input value={url} onChange={(e) => setUrl(e.target.value)} type="text" placeholder="Enter url" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
+                  <input required value={url} onChange={(e) => setUrl(e.target.value)} type="text" placeholder="Enter url" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
                </div>
 
                <div>
                   <label className="mb-2 text-sm text-slate-900 font-medium block">Description</label>
-                  <textarea value={desc} onChange={(e) => setDesc(e.target.value)} type="text" placeholder="Enter description" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
+                  <textarea required value={desc} onChange={(e) => setDesc(e.target.value)} type="text" placeholder="Enter description" className="px-4 py-3 bg-gray-100 focus:bg-transparent w-full text-sm text-slate-900 outline-[#333] rounded-sm transition-all" />
                </div>
 
                <button className="!mt-8 px-6 py-2.5 text-sm font-medium bg-[#333] hover:bg-[#222] text-white rounded-sm cursor-pointer">Create</button>
