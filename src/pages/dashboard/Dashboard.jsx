@@ -19,7 +19,7 @@ const Dashboard = () => {
                </li>
             </ul>
          </div>
-         <div className="border border-gray-500 flex-1">
+         <div className="flex-1">
             <Outlet />
          </div>
       </div>
